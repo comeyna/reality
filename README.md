@@ -1,5 +1,7 @@
 # Reality
 
+全手动设置，加深理解。
+
 ## 构建
 
 docker build -t xray:reality .
@@ -19,3 +21,7 @@ services:
         max-size: "10m"
         max-file: "3"
 ```
+
+## 参考
+
+https://github.com/wulabing/xray_docker
