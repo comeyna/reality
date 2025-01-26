@@ -2,11 +2,18 @@
 
 手动操作，加深理解。
 
-私有化之后，以后都可以一键使用。
+构建完成后，填上 IP 就可以使用。
+
+这个仓库，仅仅是个例子。不提供镜像。
+
+需要自己构建。
+
+仅供参考！
 
 ## 构建
 
 ```
+git clone https://github.com/comeyna/reality
 docker build -t xray:reality .
 ```
 
