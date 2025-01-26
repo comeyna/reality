@@ -75,7 +75,9 @@
           "tls",
           "quic",
           "fakedns"
-        ]
+        ],
+        "metadataOnly": false,
+        "routeOnly": false
       }
     }
   ],
