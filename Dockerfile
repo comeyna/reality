@@ -1,6 +1,6 @@
 # builder
 FROM golang:alpine AS builder
-LABEL version="2025.1.24"
+LABEL version="Xray 25.1.1"
 
 
 WORKDIR /app
@@ -15,21 +15,13 @@ RUN apk add --no-cache git curl jq && \
 # runner
 FROM alpine:latest AS runner
 
-
-ENV UUID=""
-ENV DEST=""
-ENV SERVERNAMES=""
-ENV PRIVATEKEY=""
-ENV SHORTIDS=""
-ENV NETWORK=""
-ENV INTERNAL_PORT=""
-ENV HOSTMODE_PORT=""
 ENV TZ=Asia/Shanghai
 
 WORKDIR /
 
-COPY ./entrypoint.sh /
 COPY ./config.json /
+COPY ./key /
+
 
 COPY --from=builder /app/xray /
 
@@ -39,6 +31,7 @@ RUN apk add --no-cache tzdata ca-certificates jq curl libqrencode-tools && \
     wget -O /geoip.dat https://github.com/v2fly/geoip/releases/latest/download/geoip.dat && \
     chmod +x /entrypoint.sh
 
+# 设置 Xray 运行命令
+ENTRYPOINT ["/xray", "-config", "/config.json"]
 
-ENTRYPOINT ["./entrypoint.sh"]
 EXPOSE 443
