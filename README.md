@@ -32,7 +32,7 @@ vless://3c94c054-dc6f-4132-9888-5c60b81414b3@ip:40000?encryption=none&flow=xtls-
 
 ## 修改
 
-默认，修改掉 自己的 UUID 钥匙 私钥 
+ 生成 UUID 钥匙 私钥 修改掉 config.json 的值
 
 ```bash
 docker exec -it xray_reality sh
