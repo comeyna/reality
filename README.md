@@ -39,6 +39,12 @@ services:
 vless://3c94c054-dc6f-4132-9888-5c60b81414b3@ip:40000?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=mKj4w7jYOQNKYblmZxxAz8gcDxg36sxMw4XCsxbHczk&type=tcp&headerType=none#%E8%87%AA%E5%AE%9A%E4%B9%89
 ```
 
+## 一键脚本
+
+```bash
+vless://3c94c054-dc6f-4132-9888-5c60b81414b3@192.227.152.230:40000?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=mKj4w7jYOQNKYblmZxxAz8gcDxg36sxMw4XCsxbHczk&type=tcp&headerType=none#%E8%87%AA%E5%AE%9A%E4%B9%89
+```
+
 ## 修改配置
 
  生成 UUID 钥匙 私钥 修改掉 config.json 的值 
