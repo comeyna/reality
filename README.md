@@ -4,7 +4,9 @@
 
 ## 构建
 
+```
 docker build -t xray:reality .
+```
 
 ## docker-compose 
 
