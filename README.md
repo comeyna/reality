@@ -53,6 +53,30 @@ UUID="$(/xray uuid)" && echo "UUID: $UUID"
 /xray x25519 >/key && PRIVATEKEY=$(cat /key | grep "Private" | awk -F ': ' '{print $2}') && PUBLICKEY=$(cat /key | grep "Public" | awk -F ': ' '{print $2}') && echo "Private key: $PRIVATEKEY" && echo "Public key: $PUBLICKEY"
 ```
 
+## 挂载文件 docker-compose
+
+复制到当前文件夹
+
+```
+docker cp xray_reality:/config.json ./config.json
+```
+
+```
+services:
+  xray_reality:
+    image: xray:reality
+    container_name: xray_reality
+    restart: always
+    ports:
+      - "40000:443"
+    volumes:
+      - ./config.json:/config.json
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+```
+
 ## 参考
 
 https://github.com/wulabing/xray_docker
