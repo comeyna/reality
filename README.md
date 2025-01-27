@@ -8,7 +8,7 @@
 
 需要自己构建。
 
-仅供参考！
+不知道的时候都找不到，知道的时候，都看见了。。。。。。
 
 ## 构建
 
@@ -86,3 +86,5 @@ services:
 https://github.com/wulabing/xray_docker
 
 https://github.com/XTLS/REALITY
+
+https://github.com/lxhao61/integrated-examples/tree/main
