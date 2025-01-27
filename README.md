@@ -83,7 +83,7 @@ services:
 
 ## 遗留问题 
 
-fakedns 加上有用吗？
+3X-UI 有 fakedns 这个有啥用？
 
 ```
       "sniffing": {
