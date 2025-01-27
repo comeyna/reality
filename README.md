@@ -8,7 +8,7 @@
 
 需要自己构建。
 
-不知道的时候都找不到，知道的时候，都看见了。。。。。。
+不知道的时候都找不到，知道的时候，都看见了。
 
 ## 构建
 
@@ -79,6 +79,22 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+```
+
+## 遗留问题 
+
+fakedns 加上有用吗？
+
+```
+      "sniffing": {
+        "enabled": false,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ]
+      }
 ```
 
 ## 参考
