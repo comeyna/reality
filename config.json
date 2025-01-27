@@ -72,7 +72,8 @@
         "enabled": true,
         "destOverride": [
           "http",
-          "tls"
+          "tls",
+          "quic"
         ],
         "metadataOnly": false,
         "routeOnly": false
