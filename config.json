@@ -73,7 +73,6 @@
         "destOverride": [
           "http",
           "tls",
-          "quic",
           "fakedns"
         ],
         "metadataOnly": false,
