@@ -67,6 +67,16 @@ services:
       - ./config.json:/config.json
 ```
 
+## 开启日志
+
+```
+  "log": {
+    "loglevel": "error",
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log"
+  }
+```
+
 ## 遗留问题 
 
 ```
