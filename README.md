@@ -97,6 +97,11 @@ services:
       }
 ```
 
+## 转变
+
+1. wulabing 放弃这个配置文件，放弃监控，看到自己的日志记录，所有的行为都在被记录在案，在打开下载、上传的记录，就是一身冷汗啊。
+
+
 ## 参考
 
 https://github.com/wulabing/xray_docker
