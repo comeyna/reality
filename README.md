@@ -27,10 +27,6 @@ services:
     restart: always
     ports:
       - "40000:443"
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "3"
 ```
 
 ## 配置信息
@@ -75,10 +71,6 @@ services:
       - "40000:443"
     volumes:
       - ./config.json:/config.json
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "3"
 ```
 
 ## 遗留问题 
