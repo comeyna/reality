@@ -27,7 +27,8 @@ COPY ./key /
 COPY --from=builder /app/xray /
 
 # 设置时区为上海
-RUN apk add --no-cache tzdata ca-certificates jq curl libqrencode-tools
+RUN apk add --no-cache tzdata ca-certificates jq curl libqrencode-tools && \
+    mkdir -p /var/log/xray
 
 # 设置 Xray 运行命令
 ENTRYPOINT ["/xray", "-config", "/config.json"]
