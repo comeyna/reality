@@ -83,8 +83,6 @@ services:
 
 ## 遗留问题 
 
-3X-UI 有 fakedns 这个有啥用？
-
 ```
       "sniffing": {
         "enabled": false,
@@ -109,3 +107,5 @@ https://github.com/wulabing/xray_docker
 https://github.com/XTLS/REALITY
 
 https://github.com/lxhao61/integrated-examples/tree/main
+
+https://xtls.github.io/config/fakedns.html#fakednsobject
