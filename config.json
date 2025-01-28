@@ -1,9 +1,9 @@
 {
-	"log": {
-	  "loglevel": "none",
-	  "access": "",
-	  "error": ""
-	},
+  "log": {
+    "loglevel": "none",
+    "access": "",
+    "error": ""
+  },
   "dns": {
     "servers": [
       "1.1.1.1",
