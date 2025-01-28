@@ -8,6 +8,12 @@
 
 在 Xray 中，shortIds 是用于代理连接中的一种优化机制，特别是在 VLESS 协议的配置中。它的作用是为了减少 UUID（用户标识符）的长度，使配置更加简洁且易于管理。具体来说，shortIds 是 UUID 的压缩或简化版本，可以用来代替传统的 UUID，来标识客户端或服务器。
 
+dest：目标服务器的地址和端口。
+privateKey：用于加密的私钥。
+serverNames：一个或多个服务器的域名，用于 SNI (Server Name Indication)。
+shortIds：这些是客户端的简短 ID，可以包含多个客户端标识符。
+xver：协议版本。
+
 
 ## 构建
 
