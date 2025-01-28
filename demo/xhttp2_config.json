@@ -1,0 +1,42 @@
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "0d313615-60c3-4978-9748-92ff453018a6"
+          }
+        ],
+        "decryption": "none",
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "dest": "www.apple.com:443",
+          "maxClient": "",
+          "maxTimediff": 0,
+          "minClient": "",
+          "privateKey": "eI3O1PEtPa16jVH8KsX5HVjQAcwGzL3YHdOS3MOufn0",
+          "serverNames": [
+            "www.apple.com"
+          ],
+          "shortIds": [
+            "60c3"
+          ],
+          "show": false,
+          "xver": 0
+        },
+        "security": "reality",
+        "xhttpSettings": {
+          "headers": {},
+          "host": "",
+          "mode": "auto",
+          "noSSEHeader": false,
+          "path": "/0d313615",
+          "scMaxBufferedPosts": 30,
+          "scMaxEachPostBytes": "1000000",
+          "xPaddingBytes": "100-1000"
+        }
+      }
