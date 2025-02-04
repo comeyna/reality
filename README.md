@@ -16,6 +16,8 @@
 - shortIds：这些是客户端的简短 ID，可以包含多个客户端标识符。
 - xver：协议版本。
 
+shortIds
+openssl rand -hex 8
 
 ## 构建
 
