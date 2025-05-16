@@ -26,6 +26,10 @@ openssl rand -hex 8
 ```
 git clone https://github.com/comeyna/reality
 docker build -t xray:reality .
+# 登录 查看版本
+curl -s https://api.github.com/repos/XTLS/Xray-core/releases | jq -r '.[0].tag_name'
+docker tag xray:reality raye2025/xray:25.4.30
+docker push raye2025/xray:25.4.30
 ```
 
 ## docker-compose 
