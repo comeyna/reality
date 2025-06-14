@@ -33,6 +33,9 @@ docker build -t xray:reality .
 curl -s https://api.github.com/repos/XTLS/Xray-core/releases | jq -r '.[0].tag_name'
 docker tag xray:reality raye2025/xray:25.4.30
 docker push raye2025/xray:25.4.30
+# 输出版本号
+echo "raye2025/xray:$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | jq -r '.[0].tag_name')"
+docker tag xray:reality raye2025/xray:$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | jq -r '.[0].tag_name')
 ```
 
 ## docker-compose 
